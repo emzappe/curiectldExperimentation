@@ -184,7 +184,7 @@ class CurieWebPanel:
             ( "Gain", pn.Column(RX0_gain, RX1_gain, TX0_gain, TX1_gain) ),
             ( "LO Suppression", pn.Column(TX0_I_bias, TX0_Q_bias, TX1_I_bias, TX1_Q_bias) ),
             ( "Power", pn.Column("Cliff Hanger") ),
-            ( "Information" , pn.Column(links, link, Cali) ),
+            ( "Information" , pn.Column(Cali, link, links) ),
             )
 
 
