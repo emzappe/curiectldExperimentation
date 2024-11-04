@@ -169,7 +169,7 @@ class CurieWebPanel:
         pn.bind(self.update_bias, channel=1, iq="Q", v=TX1_Q_bias, watch=True)
 
         links = pn.pane.Markdown("""
-        - [Help](https://www.pi-rad.io/home/contact-us)
+        - [Help](https://www.pi-rad.io/home/getting-started)
         """)
        
         
