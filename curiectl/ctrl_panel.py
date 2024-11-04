@@ -171,9 +171,7 @@ class CurieWebPanel:
         links = pn.pane.Markdown("""
         - [Help](https://www.pi-rad.io/home/contact-us)
         """)
-        link = pn.pane.Markdown("""
-        - [Getting Started](https://www.pi-rad.io/home/getting-started)
-        """)
+       
         
         component = pn.Accordion(
             ( "Frequency", pn.Column(low_LO, high_LO) ),
@@ -181,7 +179,7 @@ class CurieWebPanel:
             ( "Gain", pn.Column(RX0_gain, RX1_gain, TX0_gain, TX1_gain) ),
             ( "LO Suppression", pn.Column(TX0_I_bias, TX0_Q_bias, TX1_I_bias, TX1_Q_bias) ),
             ( "Power", pn.Column("Cliff Hanger") ),
-            ( "Information" , pn.Column(link, links) ),
+            ( "Information" , pn.Column(links) ),
             )
 
 
