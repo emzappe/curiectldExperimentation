@@ -178,7 +178,6 @@ class CurieWebPanel:
             ( "Filters", pn.Column(RX0_filter, RX1_filter, TX0_filter, TX1_filter) ),
             ( "Gain", pn.Column(RX0_gain, RX1_gain, TX0_gain, TX1_gain) ),
             ( "LO Suppression", pn.Column(TX0_I_bias, TX0_Q_bias, TX1_I_bias, TX1_Q_bias) ),
-            ( "Power", pn.Column("Cliff Hanger") ),
             ( "Information" , pn.Column(links) ),
             )
 
